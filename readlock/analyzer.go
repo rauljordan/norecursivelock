@@ -1,5 +1,5 @@
-// Package deadreadlock --
-package deadreadlock
+// Package readlock --
+package readlock
 
 import (
 	"errors"
@@ -20,7 +20,7 @@ var errUnsafePackage = errors.New(
 
 // Analyzer runs static analysis.
 var Analyzer = &analysis.Analyzer{
-	Name:     "deadreadlock",
+	Name:     "readlock",
 	Doc:      Doc,
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,

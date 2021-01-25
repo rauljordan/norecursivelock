@@ -1,4 +1,4 @@
-package deadreadlock
+package readlock
 
 import (
 	"testing"
